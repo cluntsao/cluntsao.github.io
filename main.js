@@ -22,14 +22,14 @@ function picLink() {
     for (var i = 0; i<allImages.length; i++){
         allImages[i].className = "hide";
     }
-    
+
     var picID = this.attributes["data-img"].value;
     var pic = document.getElementById(picID);
 
     if (pic.className === "hide"){
         pic.className = "";
     } else {
-        pic.className = "hide";
+        pic.className = "";
     }
 };
 
