@@ -1,0 +1,257 @@
+html, body {
+  margin: 0;
+}
+
+html a, body a {
+  text-decoration: none;
+}
+
+header {
+  padding: 2em;
+}
+
+header .menu-btn {
+  width: 50px;
+  float: right;
+  cursor: pointer;
+}
+
+header .logo {
+  width: 8vw;
+  min-width: 65p;
+}
+
+section {
+  padding: 4em;
+}
+
+section h1 {
+  font-size: 4em;
+  margin: 1em auto;
+  width: 70%;
+}
+
+section h1::before {
+  content: " ";
+  border-top: 5px solid #f00;
+  display: block;
+}
+
+nav {
+  position: absolute;
+  background: black;
+  padding: 2em;
+  width: calc(100% - 4em);
+  height: calc(100vh - 4em);
+  display: none;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+nav .close-btn {
+  width: 50px;
+  float: right;
+  cursor: pointer;
+  opacity: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 10% auto 0 auto;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  width: 80%;
+}
+
+nav ul li {
+  opacity: 0;
+}
+
+nav ul a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+nav ul span {
+  color: gray;
+  display: block;
+  font-size: .75em;
+  margin-top: 20px;
+}
+
+.show-menu {
+  display: block;
+  -webkit-animation: slide-menu 1s ease-in forwards;
+          animation: slide-menu 1s ease-in forwards;
+}
+
+.show-menu .close-btn {
+  -webkit-animation: show-x 1s 1s forwards;
+          animation: show-x 1s 1s forwards;
+}
+
+.show-menu li:nth-of-type(1) {
+  -webkit-animation: menu-item-anim .6s forwards 1s ease-in-out;
+          animation: menu-item-anim .6s forwards 1s ease-in-out;
+}
+
+.show-menu li:nth-of-type(2) {
+  -webkit-animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+}
+
+.show-menu li:nth-of-type(3) {
+  -webkit-animation: menu-item-anim .6s forwards 1.4s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.4s ease-in-out;
+}
+
+.show-menu li:nth-of-type(4) {
+  -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+}
+
+footer {
+  text-align: center;
+}
+
+footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: auto;
+  list-style-type: none;
+  padding: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .social-media a {
+  cursor: pointer;
+}
+
+footer .social-media img {
+  width: 60px;
+}
+
+footer .social-media p {
+  position: relative;
+  bottom: 0;
+}
+
+@-webkit-keyframes slide-menu {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes slide-menu {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes show-x {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-x {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes menu-item-anim {
+  from {
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-item-anim {
+  from {
+    -webkit-transform: translateY(60%);
+            transform: translateY(60%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav ul {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    width: 90%;
+  }
+  nav li {
+    margin: 10px;
+  }
+  nav .close-btn {
+    width: 20px;
+  }
+  header .menu-btn {
+    width: 20px;
+  }
+  section h1 {
+    font-size: 1.8em;
+    width: 100%;
+    margin: auto;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    margin: auto;
+    list-style-type: none;
+    padding: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer .social-media a {
+    cursor: pointer;
+  }
+  footer .social-media img {
+    width: 40px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
