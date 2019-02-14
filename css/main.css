@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
 html, body {
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 html a, body a {
@@ -11,14 +14,14 @@ header {
 }
 
 header .menu-btn {
-  width: 50px;
+  width: 35px;
   float: right;
   cursor: pointer;
 }
 
 header .logo {
   width: 8vw;
-  min-width: 65p;
+  min-width: 70px;
 }
 
 section {
@@ -27,31 +30,37 @@ section {
 
 section h1 {
   font-size: 4em;
-  margin: 1em auto;
+  margin: auto;
+  margin-left: 2.5em;
   width: 70%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 section h1::before {
-  content: " ";
-  border-top: 5px solid #f00;
+  content: "Ericsson Tsao";
+  color: turquoise;
+  border-bottom: 5px solid aqua;
   display: block;
+  margin-bottom: 25px;
+  font-size: 3em;
 }
 
 nav {
   position: absolute;
   background: black;
+  right: 0;
   padding: 2em;
-  width: calc(100% - 4em);
+  width: 20%;
   height: calc(100vh - 4em);
   display: none;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
 }
 
 nav .close-btn {
-  width: 50px;
+  width: 35px;
   float: right;
   cursor: pointer;
   opacity: 0;
@@ -63,8 +72,10 @@ nav ul {
   padding: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
   width: 80%;
 }
 
@@ -118,6 +129,8 @@ nav ul span {
 
 footer {
   text-align: center;
+  width: 100%;
+  margin-top: 100px;
 }
 
 footer .social-media {
@@ -140,9 +153,8 @@ footer .social-media img {
   width: 60px;
 }
 
-footer .social-media p {
-  position: relative;
-  bottom: 0;
+footer p {
+  margin: 3em;
 }
 
 @-webkit-keyframes slide-menu {
@@ -212,15 +224,18 @@ footer .social-media p {
 }
 
 @media only screen and (max-width: 600px) {
+  nav {
+    width: calc(100% - 4em);
+  }
   nav ul {
-    -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto);
-    -ms-grid-rows: (auto)[2];
-        grid-template-rows: repeat(2, auto);
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
     width: 90%;
   }
   nav li {
-    margin: 10px;
+    margin: 25px;
   }
   nav .close-btn {
     width: 20px;
@@ -235,6 +250,7 @@ footer .social-media p {
   }
   footer {
     text-align: center;
+    margin-top: 35px;
   }
   footer .social-media {
     display: -webkit-box;
@@ -252,6 +268,9 @@ footer .social-media p {
   }
   footer .social-media img {
     width: 40px;
+  }
+  footer p {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
