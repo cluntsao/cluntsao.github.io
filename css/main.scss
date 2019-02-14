@@ -39,8 +39,8 @@ section {
 
         &::before {
             content: "Ericsson Tsao";
-            color: turquoise;
-            border-bottom: 5px solid aqua;
+            color: #c71414;
+            border-bottom: 5px solid #c71414;
             // border-color: linear-gradient(90deg, rgb(184, 202, 187));
             display: block;
             margin-bottom: 25px;
@@ -56,6 +56,7 @@ nav {
     padding: 2em;
     font-size: 36px;
     width: 20%;
+    // height: 100vh;
     height: calc(100vh - 4em);
     display: none;
     transform: scaleX(0);

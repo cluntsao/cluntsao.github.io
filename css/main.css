@@ -38,8 +38,8 @@ section h1 {
 
 section h1::before {
   content: "Ericsson Tsao";
-  color: turquoise;
-  border-bottom: 5px solid aqua;
+  color: #c71414;
+  border-bottom: 5px solid #c71414;
   display: block;
   margin-bottom: 25px;
   font-size: 3em;

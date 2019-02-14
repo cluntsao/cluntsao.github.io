@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home | Ericsson Tsao</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
     <link rel="shortcut icon" href="./images/Tsao.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
                 <span>hurry, get back to the choppa!</span>
             </li>
             <li>
-                <a href="/">ABOUT</a>
+                <a href="/about.html">ABOUT</a>
                 <span>hurry, get back to the choppa!</span>
             </li>
             <li>
@@ -39,10 +39,14 @@
         <img src="images/menu.svg" alt="" class="menu-btn" id="open-menu">
     </header>
 
-    <section>
-        <h1>I'm a full-stack web developer & data analyst.</h1>
-        <!-- Hi! I am Ericsson Tsao. <br/> -->
-    </section>
+    <main>
+        <h1 style="text-align:center;">Projects main frame</h1>
+        <div class="project-demo-frame">
+            <div class="project-frame"></div>
+            <div class="project-frame"></div>
+            <div class="project-frame"></div>
+        </div>
+    </main>
 
     <footer>
         <ul class="social-media">
@@ -75,7 +79,6 @@
         document.getElementById("close-menu").addEventListener("click", function() {
             overlay.classList.remove("show-menu");
         })
-        
     </script>
 
 </body>

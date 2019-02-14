@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <g id="email-red" transform="translate(-0.009 -0.013)">
+    <g id="Group_2" data-name="Group 2">
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="75" cy="75" r="75" transform="translate(0.009 0.013)" fill="#c71414" opacity="0.15"/>
+      <path id="Path_2" data-name="Path 2" d="M75.009.013v150a75,75,0,0,0,0-150Z" fill="#c71414" opacity="0.15"/>
+      <circle id="Ellipse_3" data-name="Ellipse 3" cx="65.488" cy="65.488" r="65.488" transform="translate(9.521 9.524)" fill="#c71414"/>
+      <path id="Path_3" data-name="Path 3" d="M75.009,9.524V140.5a65.488,65.488,0,0,0,0-130.976Z" fill="#c71414"/>
+      <g id="Group_1" data-name="Group 1">
+        <path id="Path_4" data-name="Path 4" d="M9.593,72.085c-.041.971-.072,1.945-.072,2.927A65.486,65.486,0,0,0,75.009,140.5v-5.853A65.484,65.484,0,0,1,9.593,72.085Z" fill="#c71414"/>
+        <path id="Path_5" data-name="Path 5" d="M140.423,72.085a65.485,65.485,0,0,1-65.414,62.562V140.5a65.487,65.487,0,0,0,65.486-65.488C140.495,74.03,140.466,73.056,140.423,72.085Z" fill="#c71414"/>
+      </g>
+    </g>
+    <path id="Path_6" data-name="Path 6" d="M75,73.848c-6.655,0-40.949-21.637-40.949-21.637V50.176a6.823,6.823,0,0,1,6.824-6.816h68.25a6.823,6.823,0,0,1,6.826,6.816l-.053,2.408S81.973,73.848,75,73.848Zm0,5.372c7.3,0,40.9-20.412,40.9-20.412l.053,41.9a6.822,6.822,0,0,1-6.826,6.816H40.871a6.825,6.825,0,0,1-6.824-6.816l.055-41.9S68.341,79.22,75,79.22Z" fill="#fff"/>
+  </g>
+</svg>
